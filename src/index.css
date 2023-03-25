@@ -1,0 +1,737 @@
+
+body{
+  font-family: "Regular";
+}
+/* Stylings for navbar */
+
+/* online navbar */
+nav{
+  padding: 1rem 6rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  transition: box-shadow 0.3s  ease-in-out;
+
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: white;
+ 
+}
+/* .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+} */
+
+/* .navbar {
+  height: 60px;
+  background-color: #fef7e5;
+  position: relative;
+} */
+.logo{
+  margin: 0;
+}
+.menu-icon {
+  display: none;
+}
+
+.nav-elements ul {
+ 
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a:hover{
+  color: #EF7528;
+}
+
+.nav-elements ul a.active {
+  color: #EF7528;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EF7528;
+}
+
+
+/* end of online navbar */
+.cta{
+  gap: 2rem;
+  align-items: center;
+  display: flex;
+}
+.btn:hover{
+  background-color: #db6216;
+  color: white
+}
+.btn-primary{
+  background-color: #EF7528;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.btn-secondary{
+  border: 1px solid #EF7528;
+  color: #EF7528;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.btn-tertiary{
+  color: #EF7528;
+}
+
+/* styling for hero section */
+#hero{
+  display: flex;
+  padding: 4rem 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.company-name{
+  font-size: 18px;
+  color: #EF7528;
+  margin-bottom: 1.5rem;
+}
+
+#hero h1{
+  font-size: 3.25rem;
+  font-weight: bolder;
+}
+
+.blue{
+  color: #437C90;
+}
+
+.orange{
+  color: #EF7528;
+}
+.sub-topic{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.input{
+  border: 1px solid #F6B993;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin-right: 5px;
+}
+#infos{
+  background: #437C90;
+  padding: 3rem 6rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+#numbers img{
+  background-color: white;
+  border-radius: 50rem;
+  padding: 10px;
+}
+#numbers h1{
+  font-size: 64px;
+  margin: 1rem 0;
+  padding: 0;
+}
+#numbers .link{
+  color: white;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.figure-titles{
+  font-size: 20px;
+  font-weight: bold;
+}
+.figure-summary{
+  font-size: 18px;
+  margin: 1rem 0 0 0;
+}
+
+/* stylimg about1 section */
+#about{
+  padding:  6rem 6rem 0;
+}
+.about-header{
+  text-align: center;
+}
+.about-header h1{
+  font-size: 2.1rem;
+  font-weight: bold;
+  line-height: 44px;
+}
+.about-header p{
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+.general-about-styling{
+  padding-bottom: 6rem;
+}
+.subComponents{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.about1-subcomponent{
+  text-align: center;
+}
+
+.about1-subcomponent img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F49F69;
+  padding: 1rem;
+  border-radius: 500rem;
+
+}
+.about1-subcomponent-title{
+  font-weight: bold;
+  padding: 0.7rem 0;
+}
+.about1-subcomponent-summary{
+  padding:  0.5rem 0;
+}
+.mission{
+  border: 1px solid #374151;
+  border-radius: 24px;
+}
+.mission-component{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.mission img{
+  border-top-right-radius: 24px ;
+  border-top-left-radius: 24px ;
+  width: 100%;
+}
+
+.mission p{
+  padding: 1rem;
+}
+
+/* STYLING SERVICE */
+#service-section{
+  overflow-x: hidden;
+}
+.services{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+}
+.left-border{
+  padding: 3rem 6rem 3rem 0;
+}
+.right-border{
+  padding: 3rem 0 3rem 6rem;
+}
+.gradient-borders{
+  box-sizing: border-box;
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  border: 1rem solid;
+  border-image: linear-gradient(256.58deg, #437C90 -1.63%, #EF7528 95.77%) 1;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.bold-title{
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 70px;
+  /* padding: 0.5rem 0; */
+  margin: 0;
+}
+
+.service-content{
+  font-size: 18px;
+  /* margin: 1rem 0 */
+  line-height: 30px;
+  
+}
+
+#service-section button{
+  margin: 0.5rem 0;
+}
+/* .btn{
+  margin-right: 1rem;
+} */
+.clock-icon{
+  display: inline;
+  margin-right: 1rem;
+}
+.advantages li{
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  padding: 5px 0;
+  list-style: none;
+}
+
+
+/* styling the comments */
+
+.comment-header h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.comment-header p{
+  text-align: center;
+  padding:2rem 0;
+}
+
+.comments{
+  background-color: #437C90;
+  padding: 3rem 6rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap:2rem;
+  right: 0;
+  left: 0;
+}
+.individual-comments{
+  background-color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+}
+.quote{
+  width: 80px;
+  height: 80px
+}
+.comment-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.profile{
+  margin: 1rem 0;
+}
+.comment-details p{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Styling fundraising */
+#fundraising{
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem;
+  gap: 7rem;
+  align-items: center;
+}
+
+#community{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 4rem;
+  margin: 6rem;
+  margin-top: 0;
+  background-color: #437C90;
+  border-radius: 12px;
+  align-items: center;
+  color: white;
+}
+
+/* Styling frequently asked questions */
+#questions{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem;
+  align-items: center;
+
+}
+
+#questions h1{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+#questions .right-content{
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  border: 1px solid #F6B993;
+}
+#questions #allques{
+  width: 50%;
+}
+#questions .right-content:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.ques{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem
+}
+/* Styling ContactUS Section */
+#subscribe{
+  padding: 3rem 6rem;
+}
+#subscribe h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.envelope{
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  border-radius: 20px;
+  color: white;
+}
+.envelope-img{
+  background-color: #EF7528;
+  padding: 3rem 6rem ;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+}
+.form-content{
+  background-color: #374151;
+  padding: 3rem 6rem ;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+
+label{
+  display: block;
+  margin:0.5rem 0
+}
+
+.contact-input{
+  padding-left: 1rem;
+  font: inherit;
+}
+.form-content input, .form-content textarea{
+  margin-bottom: 1rem;
+  width: 100%;
+}
+textarea{
+  height: 25vh;
+}
+.form-content button{
+  width: 100%;
+}
+
+hr{
+  background: linear-gradient(90deg, rgba(71, 71, 65, 0) 0%, rgba(239, 117, 40, 0.6) 50%, rgba(71, 71, 65, 0) 100%);
+  margin: 1rem 6rem;
+  padding: 0;
+
+}
+#footer{
+  padding: 3rem 6rem 0;
+}
+#footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.join h1{
+  margin: 0;
+  padding: 0;
+}
+.table{
+  text-align: left;
+  overflow-x: auto;
+  margin: 0 2rem;
+  width: 50%;
+}
+.table tr th{
+  padding-right: 1.5rem; 
+}
+tbody tr{
+  border-spacing: 0 3rem;
+}
+tbody tr:not(:last-child){
+  padding-bottom: 3rem;
+}
+.copyright{
+  text-align: center;
+  margin: 6rem 0 0 0;
+}
+
+
+
+/* Tablet Styling */
+@media (max-width: 1000px) {
+  .nav{
+    gap: 2rem;
+    align-items: center;
+  }
+  .cta{
+    gap: 1rem;
+  }
+  .navbar{
+    padding: 1rem 3rem
+  }
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 2rem;
+  }
+  #hero{
+    padding: 3rem;
+  }
+  #hero h1{
+    font-size: 2.5rem;
+  }
+  #hero .right-content{
+    width:40%;
+  }
+  #infos{
+    padding: 3rem;
+  }
+  #numbers{
+    padding-right: 1.5rem;
+  }
+  .bold-title{
+    font-size: 2rem;
+    line-height: 44px;
+  }
+ 
+  #fundraising, #community, #subscribe,.comments,#mission,#about{
+    padding: 4rem 3rem;
+  }
+  #fundraising .right-content{
+    width: 40%;
+  }
+  #community img{
+    width: 100%;
+  }
+  .envelope-img{
+    padding: 2rem;
+  }
+  .envelope img{
+    width: 100%;
+    align-items: center
+  }
+  
+}
+/* Mobile device styling */
+@media screen and (max-width: 650px) and (min-width: 320px) {
+  .navbar{
+    padding: 1rem;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fef7e5;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+
+  #hero{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+  }
+
+  #hero h1{
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  #hero .right-content{
+    
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .input{
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .btn{
+    width: 100%;
+  }
+  #infos{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  #numbers{
+    margin: 1rem;
+  }
+  #about{
+    margin:1rem;
+    padding: 1rem;
+  }
+  .subComponents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  .mission-component{
+    display: flex;
+    flex-direction: column;
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .gradient-borders{
+    width: 100%;
+    padding: 0;
+    height: 50vh;
+  }
+  .left-border,.right-border{
+    padding: 0;
+  }
+  .side-contents{
+    text-align: center;
+  }
+  .bold-title{
+    font-size: 2rem;
+    line-height: 44px;
+  }
+  .right-border{
+    flex-direction: column-reverse;
+  }
+  #fundraising{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    gap: 1rem;
+  }
+  #fundraising .right-content{
+    width: 100%;
+  }
+  #community{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  #community img{
+    margin: 2rem 0;
+  }
+
+  #questions h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  #questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+  
+  }
+  
+
+  #questions #allques{
+    width: 100%;
+  }
+  #questions .right-content:not(:last-child){
+    margin-bottom: 1rem;
+  }
+  
+  .ques{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem
+  }
+  #subscribe{
+    padding: 1rem;
+  }
+  .envelope-img{
+    display: none;
+  }
+  .form-content{
+    padding: 2rem 3rem ;
+  }
+  #footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  
+  
+}

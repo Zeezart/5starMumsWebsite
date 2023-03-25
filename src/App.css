@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Light;
+    src: local("BR Omny Light"), url("./font/BR Omny Light.ttf"), format(truetype);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: local("BromnyRegular"), url("./fonts/BromnyRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bold";
+    src: local("BR Omny Bold"), url("./font/BR Omny Bold.ttf"), format(truetype);
+}
+
